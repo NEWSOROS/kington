@@ -1,7 +1,7 @@
 <template>
-  <div class="header">
+  <a href="https://extraton.io/" target="_blank" class="header">
     <img class="header__img" src="../assets/600х400.gif" alt="KingTon">
-  </div>
+  </a>
 </template>
 
 <script>
