@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <div class="info">
-      <a href="" class="brand">KINGTON — extraTON extension demo</a>
+      <a href="" class="brand">KINGTON — extraTON Chrome extension demo</a>
     </div>
     <ol class="ol">
       <li class="li" :class="{done: extensionIsInstalled}">
-        Install <a href="https://extraTON.io/" target="_blank">extraTON Chrome extension</a>
+        Install <a href="https://extraTON.io/" target="_blank">extraTON Chrome extension</a> >=0.2.1-alpha
       </li>
       <li class="li" :class="{done: isNetworkReady}">Switch to main network of freeton</li>
       <li class="li">Write short message and pay to publish</li>
