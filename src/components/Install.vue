@@ -1,17 +1,17 @@
 <template>
   <div class="container">
     <div class="info">
-      <a href="" class="brand">kington</a>
+      <a href="" class="brand">KINGTON — extraTON extension demo</a>
     </div>
     <ol class="ol">
       <li class="li" :class="{done: extensionIsInstalled}">
-        install <a href="https://extraton.io/" target="_blank">Extraton Chrome extension</a>
+        Install <a href="https://extraTON.io/" target="_blank">extraTON Chrome extension</a>
       </li>
-      <li class="li" :class="{done: isNetworkReady}">switch to main network of freeton</li>
-      <li class="li">write short message and pay to publish</li>
+      <li class="li" :class="{done: isNetworkReady}">Switch to main network of freeton</li>
+      <li class="li">Write short message and pay to publish</li>
       <li class="li">
-        join to Extraton on <a href="https://github.com/extraton/extraton-extension" target="_blank">github</a>
-        and <a href="https://t.me/extraton" target="_blank">telegram</a>
+        Join to extraTON on <a href="https://github.com/extraTON/extraTON-extension" target="_blank">github</a>
+        and <a href="https://t.me/extraTON" target="_blank">telegram</a>
       </li>
     </ol>
   </div>
@@ -77,11 +77,17 @@ export default {
   font-size: 1.5rem;
   line-height: 2;
   text-decoration: none;
-  color: var(--color1);
+  color: var(--color-blue);
 }
 
-.done {
+.li > a:hover {
+  text-decoration: underline;
+}
+
+li.done,
+li.done > a,
+li.done > a:hover {
   text-decoration: line-through;
-  color: var(--color3);
+  color: var(--color-green);
 }
 </style>

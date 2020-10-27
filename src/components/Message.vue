@@ -6,9 +6,9 @@
     </div>
 
     <div class="meta" v-if="isInfoPanel">
-      <div class="item">💎 {{ formattedBalance }}</div>
-      <div class="item">🦸 {{ message.count }}</div>
-      <div @click="showPayPanel" class="item link">⬆️ Up</div>
+      <div title="Total amount" class="item">💎 {{ formattedBalance }}</div>
+      <div title="Voters count" class="item">🦸 {{ message.count }}</div>
+      <div title="Pay and up" @click="showPayPanel" class="item link">⬆️ Up</div>
     </div>
 
     <div class="meta" v-if="isPayPanel">
@@ -21,7 +21,7 @@
 
     <div class="message" v-html="protectedHtml"></div>
 
-    <div class="last_up_at">{{ formattedDate }}</div>
+    <div :title="dateTooltip" class="last_up_at">{{ formattedDate }}</div>
 
   </div>
 </template>
@@ -70,6 +70,14 @@ export default {
 
     formattedDate() {
       return lang.formatMessageDate(this.message.lastPayAt);
+    },
+
+    dateTooltip() {
+      if (this.message.lastPayAt > 0) {
+        return lang.lastUp;
+      }
+
+      return '';
     }
   },
   methods: {
@@ -107,8 +115,8 @@ export default {
 }
 
 .draft {
-  background-color: var(--color6);
-  box-shadow: 1px 1px 0 1px var(--color7);
+  background-color: #fff1b7;
+  box-shadow: 1px 1px 0 1px var(--gold);
 }
 
 .row:hover > .meta {
@@ -154,13 +162,13 @@ export default {
 .message > a {
   font-size: 1.5rem;
   line-height: 1.6;
-  color: var(--color4);
+  color: var(--color-blue);
   text-decoration: underline;
   transition: .1s linear color;
 }
 
 .message > a:hover {
-  color: var(--color3);
+  color: var(--gold)
 }
 
 .last_up_at {

@@ -49,16 +49,14 @@ export default {
 
 <style>
 :root {
+  --white: #fff;
   --dark: #000;
-  --background: #1b1f230d;
+  --background: #f3f4f4;
   --gray: #666;
-  --color1: #64278C;
-  --color2: #8C5637;
-  --color3: #BF8F73;
-  --color4: #BF5349;
-  --color5: #f85050;
-  --color6: #fff4c8;
-  --color7: #ffef9c;
+  --gold: #edc100;
+  --color-blue: #5185c1;
+  --color-green: #709e63;
+  --color-red: #ff5f33;
   --font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -67,16 +65,16 @@ export default {
   margin: 0;
   list-style: none;
   box-sizing: border-box;
-  font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.4;
+  font-family: var(--font-family);
+  color: var(--dark);
 }
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--dark);
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .relative {

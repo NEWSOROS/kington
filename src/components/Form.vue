@@ -2,7 +2,7 @@
   <div class="container">
     <label class="label" for="message">
       <span class="brand">kington</span>
-      <span class="description">Extraton extension demo</span>
+      <span class="description">extraTON extension demo</span>
     </label>
 
     <div class="form">
@@ -120,7 +120,7 @@ export default {
 }
 
 .theme_error {
-  color: var(--color5);
+  color: var(--color-red);
 }
 
 .theme_info {

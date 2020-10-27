@@ -3,20 +3,22 @@
 import moment from "moment";
 
 export default {
-  emptySubmitMessage: "Message can't be empty.",
-  longSubmitMessage: "Too long message.",
+  emptySubmitMessage: 'Message can\'t be empty.',
+  longSubmitMessage: 'Too long message.',
+  lastUp: 'Last up',
+
   formatMessageDate: timestamp => {
     if (timestamp > 0) {
-      const date = moment.unix(timestamp).format('MMMM Do YYYY \\a\\t h:mm');
-
-      return `last up on ${date}`;
+      return moment.unix(timestamp).format('LLLL');
     }
 
     return 'the message has not been published yet';
   },
+
   extensionError(text) {
     return `Extension error: ${text}`
   },
+
   appError(text) {
     return `Application error: ${text}`
   },

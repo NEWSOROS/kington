@@ -10,7 +10,7 @@ export default () => {
   }
 
   if (!window.freeton) {
-    throw new Error('Please install and activate Extraton chrome extension!');
+    throw new Error('Please install and activate extraTON chrome extension!');
   }
 
   return instance = new freeton.providers.ExtensionProvider(window.freeton);
