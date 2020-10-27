@@ -148,10 +148,11 @@ export default createStore({
 
         if (getters.isAppReady) {
           dispatch('refreshMessages');
+        } else {
+          setTimeout(call, 3000);
         }
       };
 
-      setTimeout(call, 4000);
       await call();
     },
 

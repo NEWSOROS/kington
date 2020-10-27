@@ -1,7 +1,7 @@
 {
   "networks": {
     "2": {
-      "address": "0:0b1323059476d4e02e3ebcddbd5d66439ba05b34c97738d0026b55169fd4082a"
+      "address": "0:bbab3302726f352371676aa889ea69e155e385c3e3e4c9fb85a5c3b64ccca60c"
     }
   },
   "abi": {
@@ -67,6 +67,17 @@
           {
             "name": "amount",
             "type": "uint128"
+          }
+        ],
+        "outputs": [
+        ]
+      },
+      {
+        "name": "remove",
+        "inputs": [
+          {
+            "name": "id",
+            "type": "uint256"
           }
         ],
         "outputs": [

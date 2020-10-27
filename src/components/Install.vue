@@ -7,7 +7,7 @@
       <li class="li" :class="{done: extensionIsInstalled}">
         Install <a href="https://extraTON.io/" target="_blank">extraTON Chrome extension</a> >=0.2.1-alpha
       </li>
-      <li class="li" :class="{done: isNetworkReady}">Switch to main network of freeton</li>
+      <li class="li" :class="{done: isNetworkReady}">Switch to net.ton.dev network in extension</li>
       <li class="li">Write short message and pay to publish</li>
       <li class="li">
         Join to extraTON on <a href="https://github.com/extraTON/extraTON-extension" target="_blank">github</a>

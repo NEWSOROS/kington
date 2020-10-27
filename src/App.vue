@@ -33,7 +33,7 @@ export default {
     Tabs,
     Overlay,
   },
-  beforeCreate() {
+  mounted() {
     store.dispatch('init');
   },
   computed: {
